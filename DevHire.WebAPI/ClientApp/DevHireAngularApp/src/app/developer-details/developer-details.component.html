@@ -1,0 +1,26 @@
+<table class="details-table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Years of Experience</th>
+      <th>Favorite Language</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if (dev) {
+    <tr>
+      <td>{{ dev.firstName }}</td>
+      <td>{{ dev.lastName }}</td>
+      <td>{{ dev.yearsOfExperience }}</td>
+      <td>{{ dev.favoriteLanguage }}</td>
+      <td>
+        <div class="button-group">
+        <button type="button" class="submit-btn" (click)="updateDeveloper(dev.id)">Edit</button>        
+        <button type="button" class="submit-btn" (click)="deleteDeveloper(dev.id)">Delete</button>  
+        </div>    
+    </tr>
+    }
+  </tbody>
+</table>

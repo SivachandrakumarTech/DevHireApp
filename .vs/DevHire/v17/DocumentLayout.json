@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\controllers\\developerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\controllers\\developerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-update\\developer-update.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-update\\developer-update.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-update\\developer-update.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-update\\developer-update.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-create\\developer-create.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-create\\developer-create.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-create\\developer-create.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-create\\developer-create.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer\\developer.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer\\developer.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer\\developer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer\\developer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|c:\\users\\sivac\\development\\projects\\devhire\\devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{393D20CE-3D98-41A1-B081-68453C8EE2B7}|DevHire.WebAPI\\DevHire.WebAPI.csproj|solutionrelative:devhire.webapi\\clientapp\\devhireangularapp\\src\\app\\developer-details\\developer-details.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "developer-update.component.ts",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.ts",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.ts",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.ts",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.ts",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-13T00:02:03.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "developer-create.component.html",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.html",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.html",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.html",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-13T00:01:47.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "developer-details.component.html",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.html",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.html",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.html",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-12T23:56:45.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "developer-create.component.ts",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.ts",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.ts",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.ts",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-create\\developer-create.component.ts",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-12T23:55:21.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DevelopersController.cs",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\Controllers\\DevelopersController.cs",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\Controllers\\DevelopersController.cs",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\Controllers\\DevelopersController.cs",
+              "RelativeToolTip": "DevHire.WebAPI\\Controllers\\DevelopersController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAmwHMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T22:55:11.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "developer-update.component.html",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.html",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.html",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.html",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-update\\developer-update.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-13T00:02:04.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "developer.component.html",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.html",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.html",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.html",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-13T00:01:27.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "developer.component.ts",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.ts",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.ts",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.ts",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer\\developer.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-13T00:01:26.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "developer-details.component.ts",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.ts",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.ts",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.ts",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.ts",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-12T23:56:47.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "developer-details.component.css",
+              "DocumentMoniker": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.css",
+              "RelativeDocumentMoniker": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.css",
+              "ToolTip": "C:\\Users\\sivac\\Development\\Projects\\DevHire\\DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.css",
+              "RelativeToolTip": "DevHire.WebAPI\\ClientApp\\DevHireAngularApp\\src\\app\\developer-details\\developer-details.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-12T23:56:44.808Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

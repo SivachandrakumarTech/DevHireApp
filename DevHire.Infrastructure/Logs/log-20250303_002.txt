@@ -1,0 +1,918 @@
+2025-03-03 12:38:04.211 -05:00 [INF] Information Message
+2025-03-03 12:38:04.276 -05:00 [WRN] Warning Message
+2025-03-03 12:38:04.279 -05:00 [ERR] Error Message
+2025-03-03 12:38:04.281 -05:00 [FTL] Critical Message
+2025-03-03 12:38:04.589 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 12:38:04.650 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 12:38:04.653 -05:00 [INF] Hosting environment: Development
+2025-03-03 12:38:04.655 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 12:38:05.364 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 12:38:05.613 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 12:38:05.621 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 12:38:05.629 -05:00 [INF] HTTP GET / responded 404 in 25.7339 ms
+2025-03-03 12:38:05.655 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 328.3638ms
+2025-03-03 12:38:05.677 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 12:38:09.809 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/all - null null
+2025-03-03 12:38:09.836 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/all
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 12:38:09.842 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios)'
+2025-03-03 12:38:09.905 -05:00 [INF] Route matched with {action = "GetAllDevelopers", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllDevelopers() on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 12:38:10.565 -05:00 [INF] GetAllDevelopers Action Method got called
+2025-03-03 12:38:14.430 -05:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearOfExperience]
+FROM [Developers] AS [d]
+2025-03-03 12:38:14.653 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[ServiceContracts.DTO.DeveloperResponseDTO, ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-03 12:38:14.675 -05:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-03-03 12:38:14.694 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios) in 4774.5423ms
+2025-03-03 12:38:14.705 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios)'
+2025-03-03 12:38:14.720 -05:00 [INF] ResponseBody: [{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Roshan","lastName":"Kumar","yearOfExperience":10,"favoriteLanguage":"Typescript"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearOfExperience":12,"favoriteLanguage":"Angular"},{"id":"8570b51c-b221-4830-a7cf-d57118ec1657","firstName":"Senthil","lastName":"Mani","yearOfExperience":6,"favoriteLanguage":"React"}]
+2025-03-03 12:38:14.728 -05:00 [INF] HTTP GET /developer/all responded 200 in 4892.5873 ms
+2025-03-03 12:38:14.757 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/all - 200 null application/json; charset=utf-8 4948.6204ms
+2025-03-03 16:39:41.346 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 16:39:41.491 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 16:39:41.498 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 16:39:41.498 -05:00 [INF] Hosting environment: Development
+2025-03-03 16:39:41.499 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 16:39:41.617 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 16:39:41.619 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 16:39:41.622 -05:00 [INF] HTTP GET / responded 404 in 8.9167 ms
+2025-03-03 16:39:41.635 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 149.2314ms
+2025-03-03 16:39:41.641 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 16:39:45.523 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/all - null null
+2025-03-03 16:39:45.530 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/all
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 16:39:45.531 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios)'
+2025-03-03 16:39:45.572 -05:00 [INF] Route matched with {action = "GetAllDevelopers", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllDevelopers() on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 16:39:45.920 -05:00 [INF] GetAllDevelopers Action Method got called
+2025-03-03 16:39:48.315 -05:00 [ERR] An error occurred using the connection to database 'DevelopersBios1' on server '(localdb)\MSSQLLocalDB'.
+2025-03-03 16:39:48.345 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entities.DevelopersBiosDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "DevelopersBios1" requested by the login. The login failed.
+Login failed for user 'SIVACHANDRAKUMA\sivac'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:f1760d39-76c8-41bb-90e6-190bbdea86fe
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "DevelopersBios1" requested by the login. The login failed.
+Login failed for user 'SIVACHANDRAKUMA\sivac'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:f1760d39-76c8-41bb-90e6-190bbdea86fe
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-03 16:39:53.406 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios) in 7825.8417ms
+2025-03-03 16:39:53.411 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetAllDevelopers (DevelopersBios)'
+2025-03-03 16:39:53.413 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 16:39:53.417 -05:00 [ERR] HTTP GET /developer/all responded 500 in 7887.4887 ms
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "DevelopersBios1" requested by the login. The login failed.
+Login failed for user 'SIVACHANDRAKUMA\sivac'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:f1760d39-76c8-41bb-90e6-190bbdea86fe
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.DevelopersRepository.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Repositories\DevelopersRepository.cs:line 20
+   at Services.DevelopersService.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 26
+   at DeveloperBios.Controllers.DevelopersController.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 16:39:53.482 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "DevelopersBios1" requested by the login. The login failed.
+Login failed for user 'SIVACHANDRAKUMA\sivac'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:f1760d39-76c8-41bb-90e6-190bbdea86fe
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.DevelopersRepository.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Repositories\DevelopersRepository.cs:line 20
+   at Services.DevelopersService.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 26
+   at DeveloperBios.Controllers.DevelopersController.GetAllDevelopers() in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-03 16:39:53.532 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/all - 500 null text/plain; charset=utf-8 8009.2107ms
+2025-03-03 20:47:22.564 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:47:22.649 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:47:22.652 -05:00 [INF] Hosting environment: Development
+2025-03-03 20:47:22.653 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:47:23.139 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:47:23.322 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:47:23.325 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:47:23.328 -05:00 [INF] HTTP GET / responded 404 in 8.7133 ms
+2025-03-03 20:47:23.347 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 215.9515ms
+2025-03-03 20:47:23.352 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 20:47:25.739 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:47:25.765 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:47:25.770 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:47:25.798 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:47:34.807 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:47:36.334 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:48:26.658 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 60840.7463ms
+2025-03-03 20:48:26.678 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:48:26.693 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 20:48:26.712 -05:00 [ERR] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 500 in 60946.6500 ms
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 20:48:26.802 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-03 20:48:26.830 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 500 null text/plain; charset=utf-8 61091.0159ms
+2025-03-03 20:50:34.186 -05:00 [FTL] Application startup exception
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-03-03 20:50:34.235 -05:00 [ERR] Hosting failed to start
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-03-03 20:53:03.155 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:53:03.244 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:53:03.245 -05:00 [INF] Hosting environment: Production
+2025-03-03 20:53:03.248 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:53:03.948 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:53:10.441 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:53:10.447 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:53:10.456 -05:00 [INF] HTTP GET / responded 404 in 26.5040 ms
+2025-03-03 20:53:11.735 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 500 null null 7794.2884ms
+2025-03-03 20:53:11.743 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 500
+2025-03-03 20:53:12.421 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/favicon.ico - null null
+2025-03-03 20:53:26.673 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:53:26.754 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:53:26.757 -05:00 [INF] Hosting environment: Production
+2025-03-03 20:53:26.758 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:53:27.716 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:53:36.666 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:53:36.671 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:53:36.676 -05:00 [INF] HTTP GET / responded 404 in 17.6615 ms
+2025-03-03 20:53:40.035 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 500 null null 12325.5018ms
+2025-03-03 20:53:40.041 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 500
+2025-03-03 20:53:40.585 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/favicon.ico - null null
+2025-03-03 20:53:55.325 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:53:55.354 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:53:55.418 -05:00 [INF] HTTP GET /favicon.ico responded 404 in 132.7996 ms
+2025-03-03 20:53:55.426 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:54:28.955 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/favicon.ico - 500 null null 48370.8978ms
+2025-03-03 20:54:29.010 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/favicon.ico, Response status code: 500
+2025-03-03 20:54:30.513 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:54:30.518 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:54:30.595 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:54:38.294 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:54:39.235 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:54:43.139 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 12537.0511ms
+2025-03-03 20:54:43.145 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:54:43.148 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 20:54:43.151 -05:00 [ERR] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 500 in 12638.9846 ms
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 20:54:44.864 -05:00 [ERR] null null
+2025-03-03 20:54:46.709 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 500 null null 51282.8089ms
+2025-03-03 20:55:10.914 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:55:11.015 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:55:11.017 -05:00 [INF] Hosting environment: Development
+2025-03-03 20:55:11.019 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:55:11.512 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:55:11.637 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:55:11.641 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:55:11.646 -05:00 [INF] HTTP GET / responded 404 in 10.5399 ms
+2025-03-03 20:55:11.659 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 154.2247ms
+2025-03-03 20:55:11.665 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 20:55:16.741 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:55:16.769 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:55:16.772 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:55:16.861 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:55:18.870 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:55:18.873 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:55:21.224 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 4348.1486ms
+2025-03-03 20:55:21.228 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:55:21.232 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 20:55:21.235 -05:00 [ERR] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 500 in 4465.6870 ms
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 20:55:21.279 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-03 20:55:21.306 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 500 null text/plain; charset=utf-8 4566.52ms
+2025-03-03 20:56:04.393 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:56:04.406 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:56:04.411 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:56:04.411 -05:00 [INF] HTTP GET / responded 404 in 6.0480 ms
+2025-03-03 20:56:04.416 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 22.1447ms
+2025-03-03 20:56:04.421 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 20:56:07.608 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:56:07.618 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:56:07.622 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:56:07.624 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:56:09.004 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:56:09.006 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:56:13.292 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 5661.5452ms
+2025-03-03 20:56:13.332 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:56:13.336 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 20:56:13.340 -05:00 [ERR] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 500 in 5721.4970 ms
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 20:56:13.356 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-03 20:56:13.367 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 500 null text/plain; charset=utf-8 5759.0506ms
+2025-03-03 20:56:48.320 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:56:48.501 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:56:48.503 -05:00 [INF] Hosting environment: Production
+2025-03-03 20:56:48.504 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:56:48.764 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:56:50.843 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:56:50.848 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:56:50.852 -05:00 [INF] HTTP GET / responded 404 in 11.3224 ms
+2025-03-03 20:56:51.618 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 500 null null 2864.7126ms
+2025-03-03 20:56:51.623 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 500
+2025-03-03 20:56:52.021 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/favicon.ico - null null
+2025-03-03 20:56:53.896 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:56:53.898 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:56:53.899 -05:00 [INF] HTTP GET /favicon.ico responded 404 in 3.5100 ms
+2025-03-03 20:56:54.508 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/favicon.ico - 500 null null 2487.8241ms
+2025-03-03 20:56:54.512 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/favicon.ico, Response status code: 500
+2025-03-03 20:56:57.955 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:56:59.032 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:56:59.036 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:56:59.121 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:57:00.396 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:57:00.398 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:57:03.875 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 4741.9674ms
+2025-03-03 20:57:03.878 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:57:03.880 -05:00 [INF] Response:
+StatusCode: 200
+2025-03-03 20:57:03.882 -05:00 [ERR] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 500 in 4850.3111 ms
+Exceptions.InvalidDeveloperIDException: Developer ID cannot be null or empty.
+   at Services.DevelopersService.GetDeveloperById(Nullable`1 developerID) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\Services\DevelopersService.cs:line 38
+   at DeveloperBios.Controllers.DevelopersController.GetDeveloper(Guid id) in C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios\Controllers\DevelopersController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-03-03 20:57:04.773 -05:00 [ERR] null null
+2025-03-03 20:57:05.381 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 500 null null 7425.611ms
+2025-03-03 20:59:13.058 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 20:59:13.148 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 20:59:13.150 -05:00 [INF] Hosting environment: Development
+2025-03-03 20:59:13.151 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 20:59:13.556 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 20:59:13.686 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 20:59:13.688 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 20:59:13.691 -05:00 [INF] HTTP GET / responded 404 in 8.2630 ms
+2025-03-03 20:59:13.704 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 152.0228ms
+2025-03-03 20:59:13.710 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 20:59:17.474 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 20:59:17.498 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 20:59:17.504 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:59:17.590 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 20:59:21.101 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 20:59:21.607 -05:00 [INF] The GUID ID is { }
+2025-03-03 20:59:29.810 -05:00 [INF] Executed DbCommand (97ms) [Parameters=[@__developerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearOfExperience]
+FROM [Developers] AS [d]
+WHERE [d].[Id] = @__developerID_0
+2025-03-03 20:59:45.574 -05:00 [INF] Executing JsonResult, writing value of type 'ServiceContracts.DTO.DeveloperResponseDTO'.
+2025-03-03 20:59:45.590 -05:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-03-03 20:59:45.607 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 28003.0566ms
+2025-03-03 20:59:45.611 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 20:59:45.619 -05:00 [INF] ResponseBody: {"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Roshan","lastName":"Kumar","yearOfExperience":10,"favoriteLanguage":"Typescript"}
+2025-03-03 20:59:45.622 -05:00 [INF] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 200 in 28124.0756 ms
+2025-03-03 20:59:45.644 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 200 null application/json; charset=utf-8 28170.702ms
+2025-03-03 21:00:11.819 -05:00 [INF] Now listening on: http://localhost:5055
+2025-03-03 21:00:11.912 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 21:00:11.914 -05:00 [INF] Hosting environment: Development
+2025-03-03 21:00:11.916 -05:00 [INF] Content root path: C:\Users\sivac\Development\ASP Net Core\DevelopersBios\DevelopersBios
+2025-03-03 21:00:12.557 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/ - null null
+2025-03-03 21:00:12.684 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 21:00:12.686 -05:00 [INF] Response:
+StatusCode: 404
+2025-03-03 21:00:12.689 -05:00 [INF] HTTP GET / responded 404 in 7.8590 ms
+2025-03-03 21:00:12.702 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/ - 404 0 null 151.5054ms
+2025-03-03 21:00:12.711 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/, Response status code: 404
+2025-03-03 21:00:15.268 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - null null
+2025-03-03 21:00:15.294 -05:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d
+Accept: */*
+Connection: keep-alive
+Host: localhost:5055
+User-Agent: PostmanRuntime/7.43.0
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Postman-Token: [Redacted]
+2025-03-03 21:00:15.300 -05:00 [INF] Executing endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 21:00:15.330 -05:00 [INF] Route matched with {action = "GetDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDeveloper(System.Guid) on controller DeveloperBios.Controllers.DevelopersController (DevelopersBios).
+2025-03-03 21:00:18.181 -05:00 [INF] GetDeveloper Action Method got called
+2025-03-03 21:00:18.183 -05:00 [INF] The GUID ID is { }
+2025-03-03 21:00:22.769 -05:00 [INF] Executed DbCommand (60ms) [Parameters=[@__developerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearOfExperience]
+FROM [Developers] AS [d]
+WHERE [d].[Id] = @__developerID_0
+2025-03-03 21:00:22.917 -05:00 [INF] Executing JsonResult, writing value of type 'ServiceContracts.DTO.DeveloperResponseDTO'.
+2025-03-03 21:00:22.932 -05:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-03-03 21:00:22.948 -05:00 [INF] Executed action DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios) in 7601.8671ms
+2025-03-03 21:00:22.954 -05:00 [INF] Executed endpoint 'DeveloperBios.Controllers.DevelopersController.GetDeveloper (DevelopersBios)'
+2025-03-03 21:00:22.961 -05:00 [INF] ResponseBody: {"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Roshan","lastName":"Kumar","yearOfExperience":10,"favoriteLanguage":"Typescript"}
+2025-03-03 21:00:22.964 -05:00 [INF] HTTP GET /developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d responded 200 in 7669.9054 ms
+2025-03-03 21:00:22.986 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5055/developer/cee5ef24-e34f-49df-a680-1f7f98a73c0d - 200 null application/json; charset=utf-8 7717.564ms

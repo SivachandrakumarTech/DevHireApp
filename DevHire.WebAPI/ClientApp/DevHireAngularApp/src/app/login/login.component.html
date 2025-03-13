@@ -1,0 +1,31 @@
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .login-container {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        input, button {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" (click)="login()">Login</button>
+        </form>
+    </div>
+</body>
+

@@ -1,0 +1,6 @@
+.image-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 80vh;  /* Makes container full screen height */
+  }

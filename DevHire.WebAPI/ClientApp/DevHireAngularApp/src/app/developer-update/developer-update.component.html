@@ -1,0 +1,28 @@
+<form [formGroup]="developerForm" (ngSubmit)="onSubmit()" class="form-container">
+  @if (dev) {
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input id="firstName" type="text" formControlName="firstNameControl">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" type="text" formControlName="lastNameControl">
+    </div>
+
+    <div class="form-group">
+      <label for="experience">Years of Experience:</label>
+      <input id="experience" type="number" formControlName="yearsOfExperienceControl">
+    </div>
+
+    <div class="form-group">
+      <label for="language">Favorite Language:</label>
+      <input id="language" type="text" formControlName="favoriteLanguageControl">
+    </div>
+
+    <div class="button-group">
+      <button type="submit" class="submit-btn" [disabled]="!developerForm.valid">Update</button>
+      <button type="button" class="submit-btn" (click)="resetForm()">Reset</button>
+    </div>
+  }
+</form>

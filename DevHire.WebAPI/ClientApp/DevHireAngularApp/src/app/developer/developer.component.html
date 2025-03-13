@@ -1,0 +1,20 @@
+<table class="details-table">
+  <thead>
+    <tr>
+      <th>Developers</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if (developers) {
+    @for (dev of developers; track dev.id) {
+    <tr>
+      <td>
+        <a [routerLink]="['/dev', dev.id]">
+          {{ dev.firstName + ' ' + dev.lastName }}
+        </a>
+      </td>
+    </tr>
+    }
+    }
+  </tbody>
+</table>
