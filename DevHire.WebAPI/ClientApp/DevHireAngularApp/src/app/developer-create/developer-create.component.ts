@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DeveloperService } from '../developer.service';
+import { Developer } from '../model/developer';
 import { inject } from '@angular/core';
-import { Developer } from '../developer';
+import { DeveloperService } from '../services/developer.service';
 import { Router } from '@angular/router';
 import { catchError, tap, throwError } from 'rxjs';
 

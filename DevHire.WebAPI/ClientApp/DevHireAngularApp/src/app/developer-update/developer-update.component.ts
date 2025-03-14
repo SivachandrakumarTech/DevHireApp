@@ -1,8 +1,8 @@
 import { Component, OnInit, OnChanges, SimpleChanges  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Developer } from '../developer';
+import { Developer } from '../model/developer';
 import { inject } from '@angular/core';
-import { DeveloperService } from '../developer.service';
+import { DeveloperService } from '../services/developer.service';
 import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -38,7 +38,7 @@ export class DeveloperUpdateComponent implements OnInit, OnChanges {
     this.getDeveloper(this.id);    
   }
 
-    // Update form when `dev` changes
+  
     ngOnChanges(changes: SimpleChanges) {
       if (changes['dev'] && this.dev) {
         this.developerForm.patchValue({

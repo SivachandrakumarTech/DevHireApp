@@ -1,10 +1,10 @@
 import { Component} from '@angular/core';
-import { Developer } from '../developer';
+import { Developer } from '../model/developer';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { OnInit } from '@angular/core';
 import { inject } from '@angular/core';
-import { DeveloperService } from '../developer.service';
+import { DeveloperService } from '../services/developer.service';
 import { ActivatedRoute } from '@angular/router';
 
 

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../services/auth.service';
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouterOutlet , RouterLink} from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [ RouterOutlet , RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

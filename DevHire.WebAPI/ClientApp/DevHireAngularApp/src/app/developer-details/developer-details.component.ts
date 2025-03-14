@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DeveloperService } from '../developer.service';
+import { DeveloperService } from '../services/developer.service';
 import { ActivatedRoute  } from '@angular/router';
-import { Developer } from '../developer';
+import { Developer } from '../model/developer';
 import { OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { inject } from '@angular/core';
@@ -35,6 +35,7 @@ export class DeveloperDetailsComponent implements OnInit {
     console.log(id);
     this.router.navigate(['/dev-update', id]);
   }
+  
 
   deleteDeveloper(id: string): void {
     this.developerService.deleteDeveloper(id).pipe(

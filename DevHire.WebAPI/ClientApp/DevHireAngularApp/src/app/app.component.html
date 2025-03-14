@@ -28,12 +28,6 @@
     <a routerLink="/home" routerLinkActive="active"> Home </a>
     <a routerLink="/dev" routerLinkActive="active"> Developer</a>
     <a routerLink="/dev-create" routerLinkActive="active"> Create Developer </a>  
-    @if (!isAuthenticated){
-        <a routerLink="/login"> Login </a>  
-    }
-    @else{
-        <a (click)= "logout()"> Logout </a>   
-    }
-       
+    <a routerLink="/login" routerLinkActive="active"> Login </a>           
 </div>
 <router-outlet></router-outlet>

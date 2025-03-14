@@ -34,6 +34,43 @@
       box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
     }
 
+    
+  /* Input Fields */
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+
+    /* Input Field Focus Effect */
+    .form-container input[type="password"]:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+
+      /* Input Fields */
+  .form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+
+    /* Input Field Focus Effect */
+    .form-container input[type="email"]:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+
 /* Button Container */
 .button-group {
   display: flex;

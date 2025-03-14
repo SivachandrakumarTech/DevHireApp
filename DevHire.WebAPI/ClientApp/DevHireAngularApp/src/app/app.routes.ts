@@ -6,17 +6,28 @@ import { HomeComponent } from './home/home.component';
 import { DeveloperDetailsComponent } from './developer-details/developer-details.component';
 import { DeveloperCreateComponent } from './developer-create/developer-create.component';
 import { LoginComponent } from './login/login.component';
-import { AuthService } from './auth.service';
+import { AuthService } from './services/auth.service';
 import { inject } from '@angular/core';
 import { routeGuard } from './route.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DataResolverService } from './data-resolver.service';
+import { DataResolverService } from './services/data-resolver.service';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
-    {
+  {
     path:'home', 
     title: "Home", component:HomeComponent
-    },  
+  },
+  {
+    path: "login",
+    title: "Login",
+    component: LoginComponent
+  },
+  {
+    path: "register",
+    title: "Register",
+    component: RegisterComponent
+  },
     {
      path:'dev', 
      title: "Developer",
@@ -40,12 +51,6 @@ export const routes: Routes = [
     title: "Update Developer",
     loadComponent: () => import('./developer-update/developer-update.component').then(m => m.DeveloperUpdateComponent)  
    },
-
-    {
-    path:"login",
-    title: "Login", 
-    component:LoginComponent
-    },
     {
     path:'', 
     redirectTo:'home', 

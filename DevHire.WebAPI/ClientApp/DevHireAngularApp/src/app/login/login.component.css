@@ -1,0 +1,121 @@
+/* Form Container */
+.form-container {
+  width: 50%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* Form Labels */
+  .form-container label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+
+  /* Input Fields */
+  .form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+
+    /* Input Field Focus Effect */
+    .form-container input[type="text"]:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+
+      
+/* Input Fields */
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+  /* Input Field Focus Effect */
+  .form-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+
+    /* Input Fields */
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+  /* Input Field Focus Effect */
+  .form-container input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+
+
+/* Button Container */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+  /* Submit Button */
+  button.submit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+    button.submit-btn:hover {
+      background-color: #218838;
+    }
+
+  /* Delete Button */
+  button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+
+    button.delete-btn:hover {
+      background-color: #c82333;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -6,7 +6,7 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { withPreloading } from '@angular/router';
 import { PreloadAllModules } from '@angular/router';
 import { NoPreloading } from '@angular/router';
-import { FlagBasedPreloadingStrategyService } from './flag-based-preloading-strategy.service';
+import { FlagBasedPreloadingStrategyService } from './services/flag-based-preloading-strategy.service';
 import { loggingInterceptor } from './LoggingInterceptor';
 
 export const appConfig: ApplicationConfig = {
