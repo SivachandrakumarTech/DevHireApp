@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DevHire.Domain.IdentityEntities;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace DevHire.Infrastructure.DBContext
 {
@@ -15,10 +16,9 @@ namespace DevHire.Infrastructure.DBContext
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+            optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
-
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ServiceContracts;
+using DevHire.Application.ServiceContracts;
 using DTO;
 using Asp.Versioning;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using ServiceContracts;
+﻿using DevHire.Application.ServiceContracts;
 using RepositoryContracts;
 using DTO;
 using Entities;
@@ -6,7 +6,7 @@ using System.Reflection.Metadata.Ecma335;
 using AutoMapper;
 using Exceptions;
 
-namespace Services
+namespace DevHire.Application.Services
 {
     public class DevelopersService : IDevelopersService
     {

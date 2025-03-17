@@ -1,0 +1,13 @@
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\bin\Debug\net9.0\DevHire.Domain.deps.json
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\bin\Debug\net9.0\DevHire.Domain.dll
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\bin\Debug\net9.0\DevHire.Domain.pdb
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.csproj.AssemblyReference.cache
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.AssemblyInfoInputs.cache
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.AssemblyInfo.cs
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.sourcelink.json
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.dll
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\refint\DevHire.Domain.dll
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\DevHire.Domain.pdb
+C:\Users\sivac\Development\Projects\DevHire\DevHire.Domain\obj\Debug\net9.0\ref\DevHire.Domain.dll

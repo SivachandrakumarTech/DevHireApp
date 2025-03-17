@@ -6735,3 +6735,379 @@ Content-Length: 974
 2025-03-12 21:33:40.055 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
 2025-03-12 21:33:40.057 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 23.8549 ms
 2025-03-12 21:33:40.060 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 31.6461ms
+2025-03-12 22:42:16.000 -04:00 [INF] Now listening on: https://localhost:7176
+2025-03-12 22:42:16.362 -04:00 [INF] Now listening on: http://localhost:5165
+2025-03-12 22:42:17.149 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 22:42:18.146 -04:00 [INF] Hosting environment: Development
+2025-03-12 22:42:19.085 -04:00 [INF] Content root path: C:\Users\sivac\Development\Projects\DevHire\DevHire.WebAPI
+2025-03-12 22:42:20.977 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:42:25.070 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+DNT: 1
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:42:25.112 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:42:25.310 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:42:26.922 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:42:36.064 -04:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:42:36.513 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:42:37.098 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 974
+2025-03-12 22:42:37.191 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 11816.8373ms
+2025-03-12 22:42:37.233 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:42:37.268 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:42:37.417 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 12386.0342 ms
+2025-03-12 22:42:37.596 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 16658.8895ms
+2025-03-12 22:42:39.042 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/favicon.ico - null null
+2025-03-12 22:42:39.086 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:42:39.110 -04:00 [INF] Response:
+StatusCode: 404
+2025-03-12 22:42:39.130 -04:00 [INF] HTTP GET /favicon.ico responded 404 in 45.6439 ms
+2025-03-12 22:42:39.154 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/favicon.ico - 404 0 null 113.23ms
+2025-03-12 22:42:39.250 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7176/favicon.ico, Response status code: 404
+2025-03-12 22:43:36.243 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:43:36.292 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:43:36.368 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:43:36.382 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:36.394 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:43:36.423 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:43:36.656 -04:00 [INF] Executed DbCommand (125ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:43:36.686 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:43:36.703 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 974
+2025-03-12 22:43:36.717 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 303.5756ms
+2025-03-12 22:43:36.727 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:36.736 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:43:36.744 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 453.4294 ms
+2025-03-12 22:43:36.761 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 517.8674ms
+2025-03-12 22:43:41.748 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:43:41.803 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:43:41.825 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:43:41.841 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:41.877 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:43:41.987 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:43:43.017 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:43:43.031 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:43:43.040 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 974
+2025-03-12 22:43:43.046 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 1118.5909ms
+2025-03-12 22:43:43.058 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:43.070 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:43:43.078 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 1275.6225 ms
+2025-03-12 22:43:43.092 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 1345.3922ms
+2025-03-12 22:43:56.061 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:43:56.178 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:43:56.191 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:43:56.205 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:56.217 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:43:56.235 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:43:56.256 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:43:56.272 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:43:56.283 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 974
+2025-03-12 22:43:56.290 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 57.7719ms
+2025-03-12 22:43:56.302 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:43:56.312 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:43:56.321 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 144.1764 ms
+2025-03-12 22:43:56.334 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 273.7531ms
+2025-03-12 22:44:03.741 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:44:03.764 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:44:03.774 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:44:03.782 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:03.794 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:44:03.811 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:44:03.829 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:44:03.847 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:44:03.859 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 974
+2025-03-12 22:44:03.866 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 55.984ms
+2025-03-12 22:44:03.877 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:03.886 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:44:03.895 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 131.7684 ms
+2025-03-12 22:44:03.913 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 974 application/json; charset=utf-8 171.6181ms
+2025-03-12 22:44:24.391 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 - null null
+2025-03-12 22:44:24.423 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:44:24.449 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:44:24.491 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-12 22:44:24.499 -04:00 [INF] HTTP OPTIONS /api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 responded 204 in 76.3484 ms
+2025-03-12 22:44:24.518 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 - 204 null null 127.3212ms
+2025-03-12 22:44:24.533 -04:00 [INF] Request starting HTTP/2 PUT https://localhost:7176/api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 - application/json 131
+2025-03-12 22:44:24.566 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: PUT
+Scheme: https
+PathBase: 
+Path: /api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 131
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:44:24.575 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:44:24.580 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.UpdateDeveloper (DevHire.WebAPI)'
+2025-03-12 22:44:24.661 -04:00 [INF] Route matched with {action = "UpdateDeveloper", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateDeveloper(System.Nullable`1[System.Guid], DTO.DeveloperDTO) on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:44:24.768 -04:00 [INF] RequestBody: {"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C++"}
+2025-03-12 22:44:31.484 -04:00 [INF] Executed DbCommand (101ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Developers] SET [FavoriteLanguage] = @p0, [FirstName] = @p1, [LastName] = @p2, [YearsOfExperience] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2025-03-12 22:44:31.600 -04:00 [INF] Executing OkObjectResult, writing value of type 'DTO.DeveloperDTO'.
+2025-03-12 22:44:31.611 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 131
+2025-03-12 22:44:31.617 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.UpdateDeveloper (DevHire.WebAPI) in 6938.2478ms
+2025-03-12 22:44:31.629 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.UpdateDeveloper (DevHire.WebAPI)'
+2025-03-12 22:44:31.637 -04:00 [INF] ResponseBody: {"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C++"}
+2025-03-12 22:44:31.644 -04:00 [INF] HTTP PUT /api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 responded 200 in 7079.2792 ms
+2025-03-12 22:44:31.658 -04:00 [INF] Request finished HTTP/2 PUT https://localhost:7176/api/v1/developers/ca4aa770-0106-4c67-812a-bc94a3428126 - 200 131 application/json; charset=utf-8 7125.7039ms
+2025-03-12 22:44:31.682 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:44:31.706 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:44:31.717 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:44:31.724 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:31.735 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:44:31.753 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:44:31.771 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:44:31.788 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:44:31.799 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 976
+2025-03-12 22:44:31.806 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 53.8928ms
+2025-03-12 22:44:31.818 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:31.826 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C++"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:44:31.833 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 126.8344 ms
+2025-03-12 22:44:31.847 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 976 application/json; charset=utf-8 165.0188ms
+2025-03-12 22:44:39.050 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-12 22:44:39.074 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-12 22:44:39.084 -04:00 [INF] CORS policy execution successful.
+2025-03-12 22:44:39.091 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:39.098 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-12 22:44:39.112 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-12 22:44:39.127 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-12 22:44:39.144 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-12 22:44:39.155 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 976
+2025-03-12 22:44:39.162 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 52.1002ms
+2025-03-12 22:44:39.172 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-12 22:44:39.180 -04:00 [INF] ResponseBody: [{"id":"e798dd95-2f5c-46b2-9048-0c0d70d76c5c","firstName":"Sakthi","lastName":"Saravan","yearsOfExperience":15,"favoriteLanguage":"Java"},{"id":"cee5ef24-e34f-49df-a680-1f7f98a73c0d","firstName":"Sunny","lastName":"kumar","yearsOfExperience":10,"favoriteLanguage":"Swagger"},{"id":"0601dda1-774a-4fc7-b8af-6728d8addb3f","firstName":"Iswarya","lastName":"Jayraman","yearsOfExperience":2,"favoriteLanguage":"Python"},{"id":"eb68e0e6-4661-4f4f-9b23-a1c658586231","firstName":"Sivachandrakumar","lastName":"Chandrasekaran","yearsOfExperience":12,"favoriteLanguage":"Angular"},{"id":"ca4aa770-0106-4c67-812a-bc94a3428126","firstName":"Aadvik","lastName":"Siva","yearsOfExperience":2,"favoriteLanguage":"C++"},{"id":"7e18295b-32b6-42f3-9b8b-d235ed4dfa37","firstName":"Vijay","lastName":"Sharma","yearsOfExperience":5,"favoriteLanguage":"NodeJS"},{"id":"e6afbd6a-78d5-4f8d-924d-fdac74edb5c3","firstName":"Surya","lastName":"Yadav","yearsOfExperience":11,"favoriteLanguage":"Python"}]
+2025-03-12 22:44:39.190 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 115.5862 ms
+2025-03-12 22:44:39.206 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 976 application/json; charset=utf-8 155.8231ms

@@ -1,7 +1,7 @@
 ﻿using Entities;
 using DTO;
 
-namespace ServiceContracts
+namespace DevHire.Application.ServiceContracts
 {
     public interface IDevelopersService
     {

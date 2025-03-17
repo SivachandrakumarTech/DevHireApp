@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevHire.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:DevHire.WebAPI.Controllers.v2.DevelopersController">
+            <summary>
+            v2 - Developer Controller
+            </summary>
+        </member>
+        <member name="M:DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1">
+            <summary>
+            Get all developers - Version 1.0
+            </summary>
+            <returns>List of developers</returns>
+        </member>
+        <member name="M:DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV2">
+            <summary>
+            Get all developers - Version 2.0
+            </summary>
+            <returns>List of developers</returns>       
+        </member>
+    </members>
+</doc>

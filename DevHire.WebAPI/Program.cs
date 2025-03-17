@@ -1,5 +1,6 @@
-using ServiceContracts;
-using Services;
+using DevHire.Application.ServiceContracts;
+using DevHire.Application.Services;
+using DevHire.Infrastructure.DBContext;
 using RepositoryContracts;
 using Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,10 @@ using Microsoft.AspNetCore.Mvc;
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity;
+using DevHire.Domain.IdentityEntities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,14 +46,28 @@ builder.Services.AddTransient<IDevelopersService, DevelopersService>();
 //Registering Developers Repository
 builder.Services.AddTransient<IDevelopersRepository, DevelopersRepository>();
 
-//Adding DB Context for EF core
+//Adding Developer DB Context for EF core
 builder.Services.AddDbContext<DevelopersDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+//Adding Application DB Context for EF core
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+
 //Register AutoMapper   
 builder.Services.AddAutoMapper(typeof(DeveloperProfile));
+
+// Configure Identity with user and role types
+builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
+    .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>()
+    .AddDefaultTokenProviders();
 
 //Add Controllers
 builder.Services.AddControllers( options =>
@@ -56,7 +75,6 @@ builder.Services.AddControllers( options =>
     options.Filters.Add(new ProducesAttribute("application/json"));
     options.Filters.Add(new ConsumesAttribute("application/json"));
 }).AddNewtonsoftJson();
-
 
 
 // Step 1: Add API versioning
@@ -93,7 +111,7 @@ builder.Services.AddSwaggerGen(options =>
     }
 });
 
-// Adding CORS: localhost:4200
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy( policy =>
@@ -134,6 +152,7 @@ app.UseSerilogRequestLogging(); // Enable Serilog request logging
 app.UseHttpLogging();
 app.UseHttpsRedirection();
 app.UseCors();
+app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
