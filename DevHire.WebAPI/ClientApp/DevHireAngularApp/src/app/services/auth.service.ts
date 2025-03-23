@@ -1,28 +1,48 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { Router } from '@angular/router';
-import { inject } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { RegisterUser } from '../model/registerUser';
+import { Tokens } from '../model/tokens';
+import { Observable, tap } from 'rxjs';
+import { LoginUser } from '../model/loginUser';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private authResponse = new BehaviorSubject(false);
-  private authenticated = this.authResponse.asObservable();
-  private router = inject(Router);
+  private baseUrl = 'https://localhost:7176/api/v1/auth';
+  public currentUserName!: string;
+  token!: Tokens;
+
+  private httpClient = inject(HttpClient);
 
   constructor() { }
 
-  login():void {
-    this.authResponse.next(true);  
+   register(registerUser: RegisterUser): Observable<any> {    
+       return this.httpClient.post<any>(this.baseUrl + '/register', registerUser);
+     }
+
+     
+  login(login: LoginUser): Observable<any> {
+    return this.httpClient.post<any>(this.baseUrl + '/login', login);
+  }
+  
+  logout(){
+    return this.httpClient.get(this.baseUrl + '/logout');
   }
 
-  logout():void{
-    this.authResponse.next(false);    
-  }
+  refreshToken() {
 
-  isAuthenticated():Observable<boolean>{
-    return this.authenticated;
+    var accessToken = localStorage.getItem('AccessToken'); 
+    var refreshToken = localStorage.getItem('RefreshToken'); 
+
+   this.token = new Tokens(accessToken ?? '', refreshToken ?? '')
+
+    return this.httpClient.post<any>(this.baseUrl + '/refresh', this.token).pipe(
+      tap((response: any) => {
+        localStorage.setItem('AccessToken', response.jwtToken);
+        localStorage.setItem('RefreshToken', response.refreshToken);
+      })
+    );
   }
 }

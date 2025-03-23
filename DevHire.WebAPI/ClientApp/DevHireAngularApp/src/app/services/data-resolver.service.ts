@@ -14,8 +14,8 @@ export class DataResolverService implements Resolve<any>{
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any>{
     return this.developerService.getAllDevelopers().pipe(
-    retry(3),
-    catchError(error => { console.error('Error fetching developers in Data Resolver');
+    retry(0),
+    catchError(error => { console.error(error);
       return of(null);
   })
     );

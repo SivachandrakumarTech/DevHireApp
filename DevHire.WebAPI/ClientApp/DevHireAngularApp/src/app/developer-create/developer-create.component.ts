@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Developer } from '../model/developer';
@@ -22,12 +22,10 @@ export class DeveloperCreateComponent {
     private router = inject(Router);
 
     developerForm = this.formBuilder.group({
-    firstNameControl:[''],
-    lastNameControl: [''],
-    yearsOfExperienceControl: [''],
-    favoriteLanguageControl: ['']
-   
-    
+    firstNameControl:['', Validators.required],
+    lastNameControl: ['', Validators.required],
+    yearsOfExperienceControl: ['', Validators.required],
+    favoriteLanguageControl: ['', Validators.required]
   })
 
   onSubmit(){
@@ -56,5 +54,9 @@ export class DeveloperCreateComponent {
     this.developer.firstName = '';
     this.developer.lastName = '';
     this.developer.favoriteLanguage = '';
+  }
+
+  cancelDeveloper(){
+    this.router.navigate(['/dev']);
   }
 }

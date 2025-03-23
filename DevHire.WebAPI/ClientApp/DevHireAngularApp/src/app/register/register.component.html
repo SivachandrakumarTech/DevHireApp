@@ -1,5 +1,7 @@
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-container">
 
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-container">
+  <p class="register-text">Already have an account? <a routerLink="/login" routerLinkActive="active"> Login </a></p>  
   <div class="form-group">
     <label for="firstName">First Name:</label>
     <input id="firstName" type="text" formControlName="firstNameControl">
@@ -11,12 +13,7 @@
   </div>
 
   <div class="form-group">
-    <label for="language">User Name:</label>
-    <input id="userName" type="text" formControlName="userNameControl">
-  </div>
-
-  <div class="form-group">
-    <label for="experience">E-mail:</label>
+    <label for="email">E-mail:</label>
     <input id="email" type="email" formControlName="emailControl">
   </div>
 
@@ -25,9 +22,22 @@
     <input id="password" type="password" formControlName="passwordControl">
   </div>
 
+  <div class="form-group">
+    <label for="confirmPassword">Confirm Password:</label>
+    <input id="confirmPassword" type="password" formControlName="confirmPasswordControl">
+  </div>
+
+  <div class="radio-container">
+    <label for="userType">Select the User Type:</label>
+    <label for="userType">Developer<input id="userTypeDeveloper" type="radio" formControlName="userTypeControl" value="developer" checked> </label>
+    <label for="userType">Employer<input id="userTypeEmployer" type="radio" formControlName="userTypeControl" value="employer"> </label>
+  </div>
+
   <div class="button-group">
     <button type="submit" class="submit-btn" [disabled]="!registerForm.valid">Register</button>
     <button type="button" class="submit-btn" (click)="resetRegister()">Reset</button>
+    <button type="button" class="submit-btn" (click)="cancelRegister()">Cancel</button>
   </div>
 
 </form>
+<router-outlet></router-outlet>

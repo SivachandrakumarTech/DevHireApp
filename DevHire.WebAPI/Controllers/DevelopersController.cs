@@ -9,12 +9,15 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DevHire.WebAPI.Controllers.v2
 {
     /// <summary>
     /// v2 - Developer Controller
     /// </summary>
+    ///
+    [Authorize] // Applies to all actions in this controller
     [ApiController]
     [Route("api/v{version:ApiVersion}/[controller]")]
     //[ApiVersion("1.0")]
@@ -24,6 +27,11 @@ namespace DevHire.WebAPI.Controllers.v2
         private readonly IDevelopersService? _developersService;
         private readonly ILogger<DevelopersController> _logger;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="developersService"></param>
+        /// <param name="logger"></param>
         public DevelopersController(IDevelopersService developersService, ILogger<DevelopersController> logger)
         {
             _developersService = developersService;
@@ -83,6 +91,11 @@ namespace DevHire.WebAPI.Controllers.v2
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         [ApiVersion("1.0")]
         public async Task<ActionResult<DeveloperDTO>> GetAllDevelopersById(Guid? id)
@@ -108,6 +121,12 @@ namespace DevHire.WebAPI.Controllers.v2
         }
 
       
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="developerDTO"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         [ApiVersion("1.0")]
         public async Task<ActionResult> UpdateDeveloper(Guid? id, DeveloperDTO developerDTO)
@@ -134,6 +153,11 @@ namespace DevHire.WebAPI.Controllers.v2
         }
         
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="developerDTO"></param>
+        /// <returns></returns>
         [HttpPost]
         [ApiVersion("1.0")]
         public async Task<ActionResult<DeveloperDTO>> CreateDeveloper([FromBody] DeveloperDTO developerDTO)
@@ -160,6 +184,12 @@ namespace DevHire.WebAPI.Controllers.v2
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="developerDTO"></param>
+        /// <returns></returns>
         [HttpPatch("{id}")]
         [ApiVersion("1.0")]
         public async Task<ActionResult> PatchDeveloper(Guid? id, JsonPatchDocument<DeveloperDTO> developerDTO)
@@ -194,6 +224,11 @@ namespace DevHire.WebAPI.Controllers.v2
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         [ApiVersion("1.0")]
         public async Task<ActionResult> DeleteDeveloper(Guid? id)

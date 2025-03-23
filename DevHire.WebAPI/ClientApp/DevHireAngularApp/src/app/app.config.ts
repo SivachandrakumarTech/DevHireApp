@@ -7,13 +7,14 @@ import { withPreloading } from '@angular/router';
 import { PreloadAllModules } from '@angular/router';
 import { NoPreloading } from '@angular/router';
 import { FlagBasedPreloadingStrategyService } from './services/flag-based-preloading-strategy.service';
-import { loggingInterceptor } from './LoggingInterceptor';
+import { loggingInterceptor } from './interceptors/loggingInterceptor';
+import { authInterceptor } from './interceptors/authInterceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes, withPreloading(FlagBasedPreloadingStrategyService)), 
     provideClientHydration(withEventReplay()),
-    provideHttpClient(withInterceptors([loggingInterceptor]))  
+    provideHttpClient(withInterceptors([authInterceptor, loggingInterceptor]))  
    ]
 };

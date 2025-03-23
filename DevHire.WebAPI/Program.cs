@@ -17,6 +17,11 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Identity;
 using DevHire.Domain.IdentityEntities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Text.Json;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,9 +35,6 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .CreateLogger();
 
-
-
-
 //Adding Http Logging Option
 builder.Services.AddHttpLogging(options =>
 {
@@ -45,6 +47,10 @@ builder.Services.AddTransient<IDevelopersService, DevelopersService>();
 
 //Registering Developers Repository
 builder.Services.AddTransient<IDevelopersRepository, DevelopersRepository>();
+
+//Registering Jwt Service
+builder.Services.AddTransient<IJwtService, JwtService>();
+
 
 //Adding Developer DB Context for EF core
 builder.Services.AddDbContext<DevelopersDbContext>(options =>
@@ -63,11 +69,63 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddAutoMapper(typeof(DeveloperProfile));
 
 // Configure Identity with user and role types
-builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
+builder.Services.AddIdentity<User, Role>(options =>
+{
+    options.Password.RequiredLength = 5;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = false;
+})
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
-    .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>()
+    .AddUserStore<UserStore<User, Role, ApplicationDbContext, Guid>>()
+    .AddRoleStore<RoleStore<Role, ApplicationDbContext, Guid>>()
     .AddDefaultTokenProviders();
+
+// Add authentication services
+
+builder.Services.AddAuthentication(options => {
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;    
+})
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"], // Issuer from appsettings.json
+            ValidAudience = builder.Configuration["Jwt:Audience"], // Audience from appsettings.json
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)) // Secret key
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnChallenge = context =>
+            {
+                context.HandleResponse();
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                context.Response.ContentType = "application/json";
+
+                var errorMessage = "Unauthorized"; // Default
+
+                if (context.AuthenticateFailure != null && context.AuthenticateFailure.GetType() == typeof(SecurityTokenExpiredException))
+                {
+                    errorMessage = "TokenExpired"; // Custom error for expired token
+                }
+
+                var result = JsonSerializer.Serialize(new { error = errorMessage });
+                return context.Response.WriteAsync(result);
+            }
+        };
+    });
+
+
+// Add authorication services
+
+builder.Services.AddAuthorization();
 
 //Add Controllers
 builder.Services.AddControllers( options =>
@@ -148,11 +206,15 @@ else
     app.UseExceptionHandlingMiddleware();//Using Extension Method for Custom exception handling Middleware
 }
 
+app.UseHsts();  // ??
+app.UseHttpsRedirection(); // ??
+
 app.UseSerilogRequestLogging(); // Enable Serilog request logging
 app.UseHttpLogging();
-app.UseHttpsRedirection();
+
 app.UseCors();
-app.UseRouting();
-app.UseAuthorization();
-app.MapControllers();
+app.UseRouting();        //Identifying action Method based on route
+app.UseAuthentication(); //// Enable authentication & authorization middleware
+app.UseAuthorization();  //Validates access permissions of the user
+app.MapControllers();   //Excute the filter pipeline (Action + filters)
 app.Run();

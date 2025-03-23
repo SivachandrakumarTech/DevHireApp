@@ -1,0 +1,963 @@
+2025-03-23 00:11:21.466 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:11:21.487 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:11:21.495 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:11:21.498 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:11:21.501 -04:00 [INF] HTTP OPTIONS /api/v1/developers responded 204 in 13.6037 ms
+2025-03-23 00:11:21.507 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - 204 null null 41.4289ms
+2025-03-23 00:11:21.510 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:11:21.526 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:11:21.529 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:11:21.540 -04:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/23/2025 3:59:00 AM', Current time (UTC): '3/23/2025 4:11:21 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-23 00:11:21.560 -04:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '3/23/2025 3:59:00 AM', Current time (UTC): '3/23/2025 4:11:21 AM'.
+2025-03-23 00:11:21.565 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-23 00:11:21.572 -04:00 [INF] Response:
+StatusCode: 401
+Content-Type: application/json
+2025-03-23 00:11:21.575 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-23 00:11:21.577 -04:00 [INF] ResponseBody: {"error":"TokenExpired"}
+2025-03-23 00:11:21.579 -04:00 [INF] HTTP GET /api/v1/developers responded 401 in 53.3118 ms
+2025-03-23 00:11:21.583 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 401 null application/json 72.9599ms
+2025-03-23 00:12:14.238 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/refresh - null null
+2025-03-23 00:12:14.253 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/refresh
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:12:14.256 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:12:14.257 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:12:14.259 -04:00 [INF] HTTP OPTIONS /api/v1/auth/refresh responded 204 in 6.0832 ms
+2025-03-23 00:12:14.263 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/refresh - 204 null null 25.3585ms
+2025-03-23 00:12:14.265 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7176/api/v1/auth/refresh - application/json 575
+2025-03-23 00:12:14.273 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/refresh
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Cache-Control: no-cache
+Content-Type: application/json
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+Content-Length: 575
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:12:14.276 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:12:14.281 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.RefreshToken (DevHire.WebAPI)'
+2025-03-23 00:12:14.293 -04:00 [INF] Route matched with {action = "RefreshToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(DevHire.Application.DTO.TokenDTO) on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:12:14.360 -04:00 [INF] RequestBody: {"AccessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWM2NDg2ZS0xNzRhLTRjN2MtZTEyMi0wOGRkNjg5MmZiNDciLCJqdGkiOiIyYjQ3Yzc1Ni0yNmUxLTQxNzMtYmViNi1lMWQ0Y2EwOGM0MmEiLCJpYXQiOiIxNzQyNzAyMjgwIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiQWRtaW5ARGV2SGlyZS5jb20iLCJleHAiOjE3NDI3MDIzNDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNzYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.ab14CdsFw7d96RBKVuB-7y0YOQDl-l_Vfv_G74IPqhY","RefreshToken":"cmd2L3i3iWhwwfqh9Wr9mIul6xnEERsfHS6TPAt/tdXxIlsNmZ3Rbcn+BRl+sA8jvkrhYJj5UV0k9jYsrQhypA=="}
+2025-03-23 00:12:48.680 -04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-23 00:12:54.194 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:13:09.817 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:13:09.836 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiration] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-03-23 00:14:12.855 -04:00 [INF] Executing OkObjectResult, writing value of type 'DevHire.Application.DTO.AuthenticationResponse'.
+2025-03-23 00:14:12.859 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 741
+2025-03-23 00:14:12.860 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.RefreshToken (DevHire.WebAPI) in 118562.9727ms
+2025-03-23 00:14:12.925 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.RefreshToken (DevHire.WebAPI)'
+2025-03-23 00:14:12.928 -04:00 [INF] ResponseBody: {"firstName":"DevHire","lastName":"Admin","email":"Admin@DevHire.com","expiration":"2025-03-23T04:14:01.3577139Z","jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWM2NDg2ZS0xNzRhLTRjN2MtZTEyMi0wOGRkNjg5MmZiNDciLCJqdGkiOiI1N2I0YjBkMS0yY2IzLTQ3NzctOWM2My0zOTJkOTlkMmQ2NmYiLCJpYXQiOiIxNzQyNzAzMTgxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiQWRtaW5ARGV2SGlyZS5jb20iLCJleHAiOjE3NDI3MDMyNDEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNzYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.hoPK7Ap25pJ2OpTckmOcump670VfZW7Z3pNFAFlgQ3I","refreshToken":"r3hPRcxgFqMwnTVMyyob2UzDQdmo3cHojzrD2VOODj2DxMBGOMHejIQWRblPuFkJOB3161LSPWWL6M2DrT9bNA==","refreshTokenExpiration":"2025-03-23T05:13:01.3577219Z"}
+2025-03-23 00:14:12.932 -04:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 118658.4213 ms
+2025-03-23 00:14:12.937 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7176/api/v1/auth/refresh - 200 741 application/json; charset=utf-8 118671.2714ms
+2025-03-23 00:15:33.116 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:15:33.132 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:15:33.135 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:15:33.139 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:15:33.142 -04:00 [INF] HTTP OPTIONS /api/v1/developers responded 204 in 9.7089 ms
+2025-03-23 00:15:33.147 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - 204 null null 30.3459ms
+2025-03-23 00:15:33.151 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:15:33.159 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:15:33.162 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:15:33.167 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:15:33.170 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-23 00:15:35.779 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-23 00:15:35.860 -04:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-23 00:15:35.876 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-23 00:15:35.880 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+2025-03-23 00:15:35.883 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 2706.9248ms
+2025-03-23 00:15:35.886 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:15:35.888 -04:00 [INF] ResponseBody: [{"id":"21683b16-42e5-40c7-198a-08dd65b6a192","firstName":"Iswarya","lastName":"Jayaraman","yearsOfExperience":5,"favoriteLanguage":"Java"}]
+2025-03-23 00:15:35.890 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 2730.8561 ms
+2025-03-23 00:15:35.893 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 140 application/json; charset=utf-8 2742.274ms
+2025-03-23 00:16:42.082 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/logout - null null
+2025-03-23 00:16:42.105 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/logout
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:16:42.112 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:16:42.117 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:16:42.118 -04:00 [INF] HTTP OPTIONS /api/v1/auth/logout responded 204 in 12.8850 ms
+2025-03-23 00:16:42.123 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/logout - 204 null null 41.7002ms
+2025-03-23 00:16:42.126 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/auth/logout - null null
+2025-03-23 00:16:42.134 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/logout
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:16:42.139 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:16:42.140 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:16:42.150 -04:00 [INF] Route matched with {action = "Logout", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Logout() on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:16:42.198 -04:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-03-23 00:16:42.203 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-03-23 00:16:42.206 -04:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-03-23 00:16:42.212 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-03-23 00:16:42.214 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI) in 59.4158ms
+2025-03-23 00:16:42.216 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:16:42.218 -04:00 [INF] Response:
+StatusCode: 200
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+2025-03-23 00:16:42.220 -04:00 [INF] HTTP GET /api/v1/auth/logout responded 200 in 85.5002 ms
+2025-03-23 00:16:42.223 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/auth/logout - 200 0 null 96.8901ms
+2025-03-23 00:17:45.837 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - null null
+2025-03-23 00:17:45.846 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:17:45.850 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:17:45.853 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:17:45.856 -04:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 9.8224 ms
+2025-03-23 00:17:45.862 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - 204 null null 25.4742ms
+2025-03-23 00:17:45.865 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7176/api/v1/auth/login - application/json 55
+2025-03-23 00:17:45.878 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Cache-Control: no-cache
+Content-Type: application/json
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+Content-Length: 55
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:17:45.880 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:17:45.883 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:17:45.885 -04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(DevHire.Application.DTO.LoginDTO) on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:17:45.892 -04:00 [INF] RequestBody: {"email":"Admin@DevHire.com","password":"Letme2ENTER#"}
+2025-03-23 00:17:47.596 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:17:47.865 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:17:47.881 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:17:47.894 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:17:47.904 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:17:47.908 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:17:47.919 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-23 00:17:47.925 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:17:47.932 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:17:47.938 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:17:47.944 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:17:47.949 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:17:47.953 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:17:47.962 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:17:47.981 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiration] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-03-23 00:17:47.988 -04:00 [INF] Executing OkObjectResult, writing value of type 'DevHire.Application.DTO.AuthenticationResponse'.
+2025-03-23 00:17:47.991 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Content-Length: 741
+2025-03-23 00:17:47.993 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI) in 2102.5017ms
+2025-03-23 00:17:48.000 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:17:48.037 -04:00 [INF] ResponseBody: {"firstName":"DevHire","lastName":"Admin","email":"Admin@DevHire.com","expiration":"2025-03-23T04:18:47.9593372Z","jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWM2NDg2ZS0xNzRhLTRjN2MtZTEyMi0wOGRkNjg5MmZiNDciLCJqdGkiOiJkOTczMWUwZS0wY2E1LTQ3YzctOGM0Yi02OTZjNmNhOWNiOWUiLCJpYXQiOiIxNzQyNzAzNDY3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiQWRtaW5ARGV2SGlyZS5jb20iLCJleHAiOjE3NDI3MDM1MjcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNzYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.HouC0Yg3oDvBlIrSIre7uppQXMzQ-fKNhnV7GP6Ms0Q","refreshToken":"wyfT8gDSmRmtwfglzGS3fLd21XqhWzvvr/OK+geck2NYU0yjpKZI7QLVMQQkiu6+QXxSwp0RkzNuK8pDyP4oeQ==","refreshTokenExpiration":"2025-03-23T05:17:47.9593538Z"}
+2025-03-23 00:17:48.040 -04:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2162.0173 ms
+2025-03-23 00:17:48.048 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7176/api/v1/auth/login - 200 741 application/json; charset=utf-8 2182.5456ms
+2025-03-23 00:17:59.813 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - null null
+2025-03-23 00:17:59.819 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:17:59.821 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:17:59.822 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:17:59.823 -04:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 4.7007 ms
+2025-03-23 00:17:59.830 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - 204 null null 16.8149ms
+2025-03-23 00:17:59.832 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7176/api/v1/auth/login - application/json 55
+2025-03-23 00:17:59.847 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Cache-Control: no-cache
+Content-Type: application/json
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+Content-Length: 55
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:17:59.852 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:17:59.855 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:17:59.856 -04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(DevHire.Application.DTO.LoginDTO) on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:17:59.861 -04:00 [INF] RequestBody: {"email":"Admin@DevHire.com","password":"Letme2ENTER#"}
+2025-03-23 00:18:01.370 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:18:01.575 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:18:01.579 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:18:01.583 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:18:01.585 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:18:01.589 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:18:01.592 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-23 00:18:01.603 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:18:01.608 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:18:01.617 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:18:01.624 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:18:01.634 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:18:01.639 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:18:01.649 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:18:01.661 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiration] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-03-23 00:18:01.668 -04:00 [INF] Executing OkObjectResult, writing value of type 'DevHire.Application.DTO.AuthenticationResponse'.
+2025-03-23 00:18:01.671 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Content-Length: 740
+2025-03-23 00:18:01.673 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI) in 1813.7775ms
+2025-03-23 00:18:01.676 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:18:01.679 -04:00 [INF] ResponseBody: {"firstName":"DevHire","lastName":"Admin","email":"Admin@DevHire.com","expiration":"2025-03-23T04:19:01.643884Z","jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWM2NDg2ZS0xNzRhLTRjN2MtZTEyMi0wOGRkNjg5MmZiNDciLCJqdGkiOiJjNjhlZWU2Yy0yMzk3LTRlZWEtYmNmMy0yYzI1NWM0YzEyZGIiLCJpYXQiOiIxNzQyNzAzNDgxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiQWRtaW5ARGV2SGlyZS5jb20iLCJleHAiOjE3NDI3MDM1NDEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNzYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.nZnkh1t6Th72B0LyuOAFlsAGmkML-Nqd06I7nyjT09g","refreshToken":"CIeiEWdfsyUBaluGkqOKiUlakVJAzYUxF6S9as6qhd7koQ/USg8ea0m6pExLSIiftH0cuVtTJOu/sF37MP3q3A==","refreshTokenExpiration":"2025-03-23T05:18:01.6438968Z"}
+2025-03-23 00:18:01.684 -04:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 1836.9268 ms
+2025-03-23 00:18:01.688 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7176/api/v1/auth/login - 200 740 application/json; charset=utf-8 1855.8953ms
+2025-03-23 00:18:06.057 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:18:06.059 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:18:06.059 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:18:06.060 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:18:06.060 -04:00 [INF] HTTP OPTIONS /api/v1/developers responded 204 in 1.8122 ms
+2025-03-23 00:18:06.061 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - 204 null null 4.9035ms
+2025-03-23 00:18:06.064 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:18:06.068 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:18:06.069 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:18:06.070 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:18:06.072 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-23 00:18:07.675 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-23 00:18:07.800 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-23 00:18:07.806 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-23 00:18:07.811 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+2025-03-23 00:18:07.815 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 1740.876ms
+2025-03-23 00:18:07.819 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:18:07.822 -04:00 [INF] ResponseBody: [{"id":"21683b16-42e5-40c7-198a-08dd65b6a192","firstName":"Iswarya","lastName":"Jayaraman","yearsOfExperience":5,"favoriteLanguage":"Java"}]
+2025-03-23 00:18:07.824 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 1756.7412 ms
+2025-03-23 00:18:07.829 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 140 application/json; charset=utf-8 1764.2994ms
+2025-03-23 00:19:00.336 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/logout - null null
+2025-03-23 00:19:00.354 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/logout
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:19:00.356 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:19:00.358 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:19:00.360 -04:00 [INF] HTTP OPTIONS /api/v1/auth/logout responded 204 in 6.3126 ms
+2025-03-23 00:19:00.364 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/logout - 204 null null 27.5187ms
+2025-03-23 00:19:00.367 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/auth/logout - null null
+2025-03-23 00:19:00.373 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/logout
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:19:00.376 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:19:00.378 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:19:00.381 -04:00 [INF] Route matched with {action = "Logout", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Logout() on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:19:00.387 -04:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-03-23 00:19:00.388 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-03-23 00:19:00.391 -04:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-03-23 00:19:00.393 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-03-23 00:19:00.395 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI) in 9.451ms
+2025-03-23 00:19:00.397 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:19:00.399 -04:00 [INF] Response:
+StatusCode: 200
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+2025-03-23 00:19:00.401 -04:00 [INF] HTTP GET /api/v1/auth/logout responded 200 in 28.4648 ms
+2025-03-23 00:19:00.405 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/auth/logout - 200 0 null 37.9648ms
+2025-03-23 00:20:39.702 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - null null
+2025-03-23 00:20:39.709 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:20:39.713 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:20:39.715 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:20:39.717 -04:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 7.8401 ms
+2025-03-23 00:20:39.720 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/auth/login - 204 null null 42.9773ms
+2025-03-23 00:20:39.723 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7176/api/v1/auth/login - application/json 55
+2025-03-23 00:20:39.734 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 55
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:20:39.737 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:20:39.738 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:20:39.741 -04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(DevHire.Application.DTO.LoginDTO) on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:20:39.747 -04:00 [INF] RequestBody: {"email":"Admin@DevHire.com","password":"Letme2ENTER#"}
+2025-03-23 00:20:41.128 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:20:41.337 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:20:41.347 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:20:41.357 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:20:41.368 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:20:41.375 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:20:41.383 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-23 00:20:41.393 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-23 00:20:41.402 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:20:41.410 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-23 00:20:41.417 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-23 00:20:41.425 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-23 00:20:41.430 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-23 00:20:41.440 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiration], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-23 00:20:41.463 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p18='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiration] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-03-23 00:20:41.472 -04:00 [INF] Executing OkObjectResult, writing value of type 'DevHire.Application.DTO.AuthenticationResponse'.
+2025-03-23 00:20:41.478 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Content-Length: 740
+2025-03-23 00:20:41.482 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI) in 1735.8153ms
+2025-03-23 00:20:41.486 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Login (DevHire.WebAPI)'
+2025-03-23 00:20:41.488 -04:00 [INF] ResponseBody: {"firstName":"DevHire","lastName":"Admin","email":"Admin@DevHire.com","expiration":"2025-03-23T04:21:41.4386475Z","jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWM2NDg2ZS0xNzRhLTRjN2MtZTEyMi0wOGRkNjg5MmZiNDciLCJqdGkiOiIzMzFjNGMzNC04NzJjLTRlOGEtYWY3OS1iZDljOWRiNGViYWUiLCJpYXQiOiIxNzQyNzAzNjQxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiQWRtaW5ARGV2SGlyZS5jb20iLCJleHAiOjE3NDI3MDM3MDEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNzYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.C6BhHNCvluEgeaKgdJFW-1aZoxau83Uyw_1OALt5ZOc","refreshToken":"jUnCj21wKbLylCVa9yHOhiqUhSm5ny5hTQvcer2StO7/0BKFErPzk2Fcek9bGmWcl3CAjd7mrEHomH2B0BaT+A==","refreshTokenExpiration":"2025-03-23T05:20:41.438659Z"}
+2025-03-23 00:20:41.491 -04:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 1757.6304 ms
+2025-03-23 00:20:41.495 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7176/api/v1/auth/login - 200 740 application/json; charset=utf-8 1771.9575ms
+2025-03-23 00:20:41.508 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:20:41.515 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:20:41.519 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:20:41.520 -04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-03-23 00:20:41.523 -04:00 [INF] HTTP OPTIONS /api/v1/developers responded 204 in 7.4152 ms
+2025-03-23 00:20:41.527 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7176/api/v1/developers - 204 null null 19.885ms
+2025-03-23 00:20:41.530 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/developers - null null
+2025-03-23 00:20:41.541 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/developers
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:20:41.546 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:20:41.551 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:20:41.552 -04:00 [INF] Route matched with {action = "GetAllDevelopersV1", controller = "Developers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DTO.DeveloperDTO]]] GetAllDevelopersV1() on controller DevHire.WebAPI.Controllers.v2.DevelopersController (DevHire.WebAPI).
+2025-03-23 00:20:42.309 -04:00 [INF] GetAllDevelopersV1 Action Method called
+2025-03-23 00:20:42.314 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[FavoriteLanguage], [d].[FirstName], [d].[LastName], [d].[YearsOfExperience]
+FROM [Developers] AS [d]
+2025-03-23 00:20:42.320 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DTO.DeveloperDTO, DevHire.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-23 00:20:42.321 -04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+2025-03-23 00:20:42.324 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI) in 769.3744ms
+2025-03-23 00:20:42.325 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.v2.DevelopersController.GetAllDevelopersV1 (DevHire.WebAPI)'
+2025-03-23 00:20:42.327 -04:00 [INF] ResponseBody: [{"id":"21683b16-42e5-40c7-198a-08dd65b6a192","firstName":"Iswarya","lastName":"Jayaraman","yearsOfExperience":5,"favoriteLanguage":"Java"}]
+2025-03-23 00:20:42.341 -04:00 [INF] HTTP GET /api/v1/developers responded 200 in 799.4345 ms
+2025-03-23 00:20:42.346 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/developers - 200 140 application/json; charset=utf-8 816.1407ms
+2025-03-23 00:21:01.138 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7176/api/v1/auth/logout - null null
+2025-03-23 00:21:01.142 -04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/logout
+Accept: application/json, text/plain, */*
+Host: localhost:7176
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-US;q=0.9,en;q=0.8,ta;q=0.7
+Cache-Control: no-cache
+Origin: [Redacted]
+Pragma: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+DNT: 1
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-23 00:21:01.143 -04:00 [INF] CORS policy execution successful.
+2025-03-23 00:21:01.144 -04:00 [INF] Executing endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:21:01.146 -04:00 [INF] Route matched with {action = "Logout", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Logout() on controller DevHire.WebAPI.Controllers.AuthController (DevHire.WebAPI).
+2025-03-23 00:21:01.152 -04:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-03-23 00:21:01.156 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-03-23 00:21:01.158 -04:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-03-23 00:21:01.159 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-03-23 00:21:01.160 -04:00 [INF] Executed action DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI) in 10.918ms
+2025-03-23 00:21:01.162 -04:00 [INF] Executed endpoint 'DevHire.WebAPI.Controllers.AuthController.Logout (DevHire.WebAPI)'
+2025-03-23 00:21:01.164 -04:00 [INF] Response:
+StatusCode: 200
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+2025-03-23 00:21:01.166 -04:00 [INF] HTTP GET /api/v1/auth/logout responded 200 in 24.9013 ms
+2025-03-23 00:21:01.169 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7176/api/v1/auth/logout - 200 0 null 31.3325ms

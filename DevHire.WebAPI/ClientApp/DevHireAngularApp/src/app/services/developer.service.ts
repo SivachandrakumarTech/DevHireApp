@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Developer } from '../model/developer';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable ,throwError} from 'rxjs';
 import { map , catchError } from 'rxjs/operators';
 import { inject } from '@angular/core';
@@ -20,9 +20,22 @@ export class DeveloperService {
 
   getAllDevelopers(): Observable<Developer[]> 
   { 
+    /*  // Retrieve token from localStorage
+     const token = localStorage.getItem('token');
+
+     // Initialize headers properly
+      let headers = new HttpHeaders();
+
+     if (token) {
+      headers = headers.set("Authorization", `Bearer ${token}`);
+    }
+    */
     return this.httpClient.get<Developer[]>(this.baseUrl).pipe
      (
-      map( response=> {this.developers = response; return response;}),  
+      map(response => {
+        this.developers = response; 
+        return response;
+      }),  
       catchError(this.handleError)
      )
   }

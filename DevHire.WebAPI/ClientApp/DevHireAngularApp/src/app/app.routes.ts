@@ -2,22 +2,16 @@ import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DeveloperComponent } from './developer/developer.component';
-import { HomeComponent } from './home/home.component';
 import { DeveloperDetailsComponent } from './developer-details/developer-details.component';
 import { DeveloperCreateComponent } from './developer-create/developer-create.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/auth.service';
 import { inject } from '@angular/core';
-import { routeGuard } from './route.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DataResolverService } from './services/data-resolver.service';
 import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
-  {
-    path:'home', 
-    title: "Home", component:HomeComponent
-  },
   {
     path: "login",
     title: "Login",
@@ -53,7 +47,7 @@ export const routes: Routes = [
    },
     {
     path:'', 
-    redirectTo:'home', 
+    redirectTo:'login', 
     pathMatch:'full'
     },
     {

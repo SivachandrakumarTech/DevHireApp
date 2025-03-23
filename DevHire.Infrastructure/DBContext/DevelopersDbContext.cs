@@ -11,8 +11,8 @@ using Entities;
 namespace DBContext
 {
     public class DevelopersDbContext : DbContext
-    {
-        public DevelopersDbContext(DbContextOptions<DevelopersDbContext> options ) : base (options)
+    {        
+        public DevelopersDbContext(DbContextOptions<DevelopersDbContext> options) : base(options)
         {
         }
 
